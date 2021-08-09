@@ -2,14 +2,14 @@
 
 The files in this repository were used to configure the network depicted below.
 
-[Network Diagram](/diagrams/ELK.png)
+![image](https://github.com/jahnays/ELK-Stack-Project-1/blob/main/Diagrams/ELK.png?raw=true)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the filebeat-playbook.yml file may be used to install only certain pieces of it, such as Filebeat.
 
-[pentest.yml](https://github.com/jahnays/ELK-Stack-Project-1/blob/main/Ansible%20Playbook/pentest.yml)
-[install-elk.yml](https://github.com/jahnays/ELK-Stack-Project-1/blob/main/Ansible%20Playbook/install-elk.yml)
-[filebeat-playbook.yml](https://github.com/jahnays/ELK-Stack-Project-1/blob/main/Ansible%20Playbook/filebeat-playbook.yml)
-[metricbeat-playbook.yml](https://github.com/jahnays/ELK-Stack-Project-1/blob/main/Ansible%20Playbook/metricbeat-playbook.yml)
+- [pentest.yml](https://github.com/jahnays/ELK-Stack-Project-1/blob/main/Ansible%20Playbook/pentest.yml)
+- [install-elk.yml](https://github.com/jahnays/ELK-Stack-Project-1/blob/main/Ansible%20Playbook/install-elk.yml)
+- [filebeat-playbook.yml](https://github.com/jahnays/ELK-Stack-Project-1/blob/main/Ansible%20Playbook/filebeat-playbook.yml)
+- [metricbeat-playbook.yml](https://github.com/jahnays/ELK-Stack-Project-1/blob/main/Ansible%20Playbook/metricbeat-playbook.yml)
 
 
 This document contains the following details:
@@ -47,7 +47,7 @@ The DVWA virtual machines on the internal network are not exposed to the public 
 
 Only the JumpBox machine and ELK-Server can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
 
-localhost
+`localhost`
 
 DVWA servers within the virtual network can only be accessed by the Jump-Box-Provisioner. This machine has a private IP address of 10.0.0.5 and is able to access the ELK-Server internally.
 
@@ -79,15 +79,14 @@ The playbook implements the following tasks:
 * Download and launch the Docker ELK container over ports 5601, 9200, and 5044.
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-C:\Users\jr5\Documents\GitHub\ELK-Stack-Project-1\README\Images\sudo_docker_ps.PNG
-
+![image](https://github.com/jahnays/ELK-Stack-Project-1/blob/main/README/Images/sudo_docker_ps.PNG)
 
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
 
-Web-1: 10.0.0.5
-Web-2: 10.0.0.6
+- Web-1: 10.0.0.5
+- Web-2: 10.0.0.6
 
 We have installed the following Beats on these machines:
 
