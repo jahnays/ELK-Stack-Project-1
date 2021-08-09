@@ -2,16 +2,14 @@
 
 The files in this repository were used to configure the network depicted below.
 
-<https://github.com/jahnays/ELK-Stack-Project-1/blob/main/Diagrams/ELK.png?raw=true>
+[Network Diagram](/diagrams/ELK.png)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the filebeat-playbook.yml file may be used to install only certain pieces of it, such as Filebeat.
 
-<https://github.com/jahnays/ELK-Stack-Project-1/blob/main/Ansible%20Playbook/pentest.yml>
-<https://github.com/jahnays/ELK-Stack-Project-1/blob/main/Ansible%20Playbook/install-elk.yml>
-C:\Users\jr5\Documents\GitHub\ELK-Stack-Project-1\Ansible Playbook\ pentest.yml>
-C:\Users\jr5\Documents\GitHub\ELK-Stack-Project-1\Ansible Playbook\ install-elk.yml
-C:\Users\jr5\Documents\GitHub\ELK-Stack-Project-1\Ansible Playbook\ filebeat-playbook.yml
-C:\Users\jr5\Documents\GitHub\ELK-Stack-Project-1\Ansible Playbook\ metricbeat-playbook.yml
+[pentest.yml](https://github.com/jahnays/ELK-Stack-Project-1/blob/main/Ansible%20Playbook/pentest.yml)
+[install-elk.yml](https://github.com/jahnays/ELK-Stack-Project-1/blob/main/Ansible%20Playbook/install-elk.yml)
+[filebeat-playbook.yml](https://github.com/jahnays/ELK-Stack-Project-1/blob/main/Ansible%20Playbook/filebeat-playbook.yml)
+[metricbeat-playbook.yml](https://github.com/jahnays/ELK-Stack-Project-1/blob/main/Ansible%20Playbook/metricbeat-playbook.yml)
 
 
 This document contains the following details:
@@ -111,7 +109,7 @@ SSH into the control node and follow the steps below:
 * Run the playbook using ansible-playbook install-elk.yml, and navigate to the public IP of the ELK-Server specifying the port number (in this case port 5601) to check that the installation worked as expected.
 
 
-_As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
+_As a **Bonus**, below are the specific commands the user will need to run to download the playbook, update the files, etc._
 
 $ cd/etc/ansible
 
